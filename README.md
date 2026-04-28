@@ -1,2 +1,77 @@
-# guess-the-number
-Mini jogo de adivinhação de número desenvolvido com Programação Orientada a Objetos.
+ 🎮 Guess the Number (C++)
+
+Mini jogo de adivinhação de número desenvolvido em C++ utilizando conceitos de Programação Orientada a Objetos.
+
+---
+
+ 📌 Descrição
+
+Este projeto consiste em um jogo simples onde o jogador deve adivinhar um número aleatório gerado pelo sistema.
+
+A cada tentativa, o jogo informa se o número digitado é **maior** ou **menor** que o número secreto, até que o jogador acerte.
+
+---
+
+ 🧠 Conceitos de POO Utilizados
+
+* Encapsulamento
+* Organização em classes
+* Separação de responsabilidades
+* Interação entre objetos
+
+---
+
+## 🧱 Estrutura do Projeto
+
+```
+.
+├── main.cpp
+├── Game.cpp
+├── Game.h
+├── Player.cpp
+├── Player.h
+```
+
+---
+
+## ⚙️ Como Compilar e Executar
+
+🔧 Compilação
+
+Utilizando o compilador `g++`:
+
+```
+g++ main.cpp Game.cpp Player.cpp -o game
+```
+
+ ▶️ Execução
+
+```
+./game
+```
+
+---
+
+ 🎯 Como Jogar
+
+1. O jogo gera um número aleatório (ex: entre 1 e 10)
+2. O jogador digita um palpite
+3. O sistema informa:
+
+   * "Maior" → tente um número maior
+   * "Menor" → tente um número menor
+4. O jogo termina quando o jogador acerta
+
+---
+
+👤 Autor
+
+João Carlos Padoveze Junior
+
+---
+
+ 📚 Observações
+
+Este projeto foi desenvolvido para fins acadêmicos na disciplina de Programação Orientada a Objetos.
+
+---
