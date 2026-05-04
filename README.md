@@ -30,3 +30,8 @@ Aplicar conceitos de Programação Orientada a Objetos e organização de softwa
 ---
 
 🧱 Estrutura
+.
+├── src/
+├── docs/
+├── README.md
+
