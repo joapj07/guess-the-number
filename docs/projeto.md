@@ -1,24 +1,39 @@
 # Projeto
 
-📌 Estrutura
+## 📌 Estrutura do Sistema
 
-O sistema foi desenvolvido utilizando duas classes principais:
+O sistema foi desenvolvido utilizando três classes principais:
+
+---
+
+🧱 Classes
 
 Game
 Responsável pela lógica do jogo:
 - Geração do número aleatório
 - Verificação dos palpites
+- Controle do fluxo do jogo
+
+---
 
 Player
-Responsável por armazenar informações do jogador:
+Responsável por armazenar dados do jogador:
 - Nome
 - Número de tentativas
 
 ---
 
-🔗 Relação entre classes
+ScoreManager
+Responsável pelo gerenciamento de ranking:
+- Salvar resultados em arquivo
+- Ler e exibir ranking
 
-A classe `Game` utiliza a classe `Player` para armazenar os dados do jogador durante a execução do jogo.
+---
+
+🔗 Relação entre as Classes
+
+- Game utiliza Player para armazenar dados do jogador
+- Game utiliza ScoreManager para salvar e exibir resultados
 
 ---
 
