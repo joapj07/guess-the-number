@@ -1,12 +1,12 @@
-Testes
+# Testes
 
 ✅ Teste 1 - Número menor
 
 Entrada:
 5
 
-Saída esperada:
-"Tente um número maior"
+Resultado esperado:
+Mensagem indicando que o número correto é maior
 
 ---
 
@@ -15,8 +15,8 @@ Saída esperada:
 Entrada:
 9
 
-Saída esperada:
-"Tente um número menor"
+Resultado esperado:
+Mensagem indicando que o número correto é menor
 
 ---
 
@@ -25,5 +25,25 @@ Saída esperada:
 Entrada:
 Número correto
 
-Saída esperada:
+Resultado esperado:
 Mensagem de vitória com número de tentativas
+
+---
+
+✅ Teste 4 - Salvamento de resultado
+
+Ação:
+Finalizar o jogo
+
+Resultado esperado:
+Dados do jogador salvos em arquivo
+
+---
+
+✅ Teste 5 - Exibição de ranking
+
+Ação:
+Executar função de ranking
+
+Resultado esperado:
+Lista de jogadores exibida corretamente
