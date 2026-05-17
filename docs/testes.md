@@ -1,49 +1,49 @@
 # Testes
 
-✅ Teste 1 - Número menor
-
-Entrada:
-5
-
-Resultado esperado:
-Mensagem indicando que o número correto é maior
-
----
-
-✅ Teste 2 - Número maior
-
-Entrada:
-9
-
-Resultado esperado:
-Mensagem indicando que o número correto é menor
-
----
-
-✅ Teste 3 - Acerto
-
-Entrada:
-Número correto
-
-Resultado esperado:
-Mensagem de vitória com número de tentativas
-
----
-
-✅ Teste 4 - Salvamento de resultado
+## ✅ Teste 1 - Escolha de personagem
 
 Ação:
-Finalizar o jogo
+Selecionar personagem
 
 Resultado esperado:
-Dados do jogador salvos em arquivo
+Personagem carregado corretamente
 
 ---
 
-✅ Teste 5 - Exibição de ranking
+## ✅ Teste 2 - Resposta correta
 
 Ação:
-Executar função de ranking
+Responder pergunta corretamente
 
 Resultado esperado:
-Lista de jogadores exibida corretamente
+Inimigo recebe dano
+
+---
+
+## ✅ Teste 3 - Resposta incorreta
+
+Ação:
+Responder pergunta incorretamente
+
+Resultado esperado:
+Jogador recebe dano
+
+---
+
+## ✅ Teste 4 - Vitória
+
+Ação:
+Reduzir vida do inimigo para 0
+
+Resultado esperado:
+Mensagem de vitória
+
+---
+
+## ✅ Teste 5 - Derrota
+
+Ação:
+Reduzir vida do jogador para 0
+
+Resultado esperado:
+Mensagem de derrota
