@@ -1,29 +1,35 @@
 # Análise
 
-📌 Problema
+## 📌 Objetivo
 
-Desenvolver um jogo simples em que o usuário deve adivinhar um número aleatório gerado pelo sistema.
+Desenvolver um mini jogo de batalha em turnos utilizando C++, Qt Creator e conceitos de Programação Orientada a Objetos.
+
+O jogador deverá responder perguntas para atacar o inimigo.
 
 ---
 
 ## ✅ Requisitos Funcionais
 
-- Gerar um número aleatório
-- Receber entrada do usuário
-- Informar se o número é maior ou menor
-- Encerrar o jogo ao acertar
+- Escolher personagem
+- Exibir perguntas
+- Validar respostas
+- Executar ataques
+- Controlar vida dos personagens
+- Encerrar partida ao atingir 0 de vida
 
 ---
 
-🆕 Requisitos Adicionais
+## ✅ Requisitos Adicionais
 
-- Salvar o resultado do jogador em um arquivo
-- Exibir ranking de jogadores com base no número de tentativas
+- Sistema de ranking
+- Interface gráfica com abas
+- Utilização de Qt Widgets
 
 ---
 
-⚙️ Requisitos Não Funcionais
+## ⚙️ Requisitos Não Funcionais
 
-- O sistema deve ser executado no terminal
-- Deve ser simples e de fácil utilização
-- Código organizado utilizando Programação Orientada a Objetos
+- Desenvolvido em C++
+- Utilização do Qt Creator
+- Organização modular
+- Aplicação de herança e polimorfismo
