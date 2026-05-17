@@ -1,37 +1,61 @@
-🎮 Guess the Number (C++)
+# 🎮 Battle Quiz Arena
 
-Mini jogo de adivinhação de número desenvolvido em C++ utilizando conceitos de Programação Orientada a Objetos.
-
----
-
-📌 Descrição
-
-O jogador deve adivinhar um número aleatório gerado pelo sistema.
-
-A cada tentativa, o jogo informa se o número digitado é maior ou menor até o acerto.
-
-O sistema também salva os resultados e exibe um ranking de jogadores.
+Projeto desenvolvido em C++ utilizando Qt Creator e conceitos de Programação Orientada a Objetos.
 
 ---
 
-🎯 Objetivo
+## 📌 Descrição
 
-Aplicar conceitos de Programação Orientada a Objetos e organização de software em um projeto simples.
+Battle Quiz Arena é um mini jogo de batalha em turnos com interface gráfica.
 
----
+O jogador escolhe um personagem e responde perguntas para atacar o inimigo.
 
-🧠 Conceitos Utilizados
+Cada personagem possui habilidades e atributos diferentes.
 
-- Encapsulamento  
-- Organização em classes  
-- Separação de responsabilidades  
-- Manipulação de arquivos  
+O sistema foi desenvolvido utilizando Qt Widgets e múltiplas abas.
 
 ---
 
-🧱 Estrutura
-.
+## 🎯 Objetivo
+
+Aplicar conceitos fundamentais de Programação Orientada a Objetos utilizando uma aplicação gráfica em C++.
+
+---
+
+## 🧠 Conceitos de POO Utilizados
+
+- Encapsulamento
+- Herança
+- Polimorfismo
+- Associação entre classes
+- Organização modular
+
+---
+
+## 🧱 Estrutura do Projeto
+
+```text
+battle-quiz-arena/
+│
 ├── src/
+│   ├── main.cpp
+│   ├── mainwindow.cpp
+│   ├── mainwindow.h
+│   ├── character.h
+│   ├── character.cpp
+│   ├── warrior.h
+│   ├── warrior.cpp
+│   ├── mage.h
+│   ├── mage.cpp
+│   ├── archer.h
+│   ├── archer.cpp
+│
+├── forms/
+│   ├── mainwindow.ui
+│
 ├── docs/
-├── README.md
-
+│   ├── analise.md
+│   ├── projeto.md
+│   ├── testes.md
+│
+└── README.md
