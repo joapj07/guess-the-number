@@ -2,44 +2,57 @@
 
 ## 📌 Estrutura do Sistema
 
-O sistema foi desenvolvido utilizando três classes principais:
+O sistema será dividido em múltiplas classes responsáveis por partes específicas da aplicação.
 
 ---
 
-🧱 Classes
+## 🧱 Classes
 
-Game
-Responsável pela lógica do jogo:
-- Geração do número aleatório
-- Verificação dos palpites
-- Controle do fluxo do jogo
+### Character
+Classe base do sistema.
 
----
-
-Player
-Responsável por armazenar dados do jogador:
+Responsável por:
 - Nome
-- Número de tentativas
+- Vida
+- Ataque
 
 ---
 
-ScoreManager
-Responsável pelo gerenciamento de ranking:
-- Salvar resultados em arquivo
-- Ler e exibir ranking
+### Warrior
+Classe derivada de Character.
+
+Características:
+- Alto dano físico
 
 ---
 
-🔗 Relação entre as Classes
+### Mage
+Classe derivada de Character.
 
-- Game utiliza Player para armazenar dados do jogador
-- Game utiliza ScoreManager para salvar e exibir resultados
+Características:
+- Ataque mágico
 
 ---
 
-🎯 Objetivo da Arquitetura
+### Archer
+Classe derivada de Character.
 
-Separar responsabilidades para facilitar:
-- Organização do código
-- Manutenção
-- Reutilização
+Características:
+- Ataque balanceado
+
+---
+
+### QuestionManager
+Responsável por:
+- Gerenciar perguntas
+- Validar respostas
+
+---
+
+## 🧠 Herança
+
+```text
+Character
+ ├── Warrior
+ ├── Mage
+ └── Archer
