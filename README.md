@@ -7,7 +7,7 @@ Projeto desenvolvido em C++ utilizando Qt Creator, Qt Widgets e conceitos de Pro
 ## 📌 Descrição
 
 Battle Quiz Arena é um mini jogo de batalha em turnos com interface gráfica.
-O jogador escolhe uma classe de personagem (Guerreiro, Mago ou Arqueiro) e enfrenta o temível Chefão da Arena.
+O jogador escolhe uma classe de personagem (Guerreiro, Mago ou Arqueiro) e enfrenta o Chefão da Arena.
 Para desferir ataques e vencer a batalha, o jogador deve responder corretamente a perguntas de múltipla escolha exibidas na tela.
 O sistema foi desenvolvido utilizando Qt Widgets e múltiplas abas (`QTabWidget`).
 
