@@ -1,38 +1,25 @@
-### 📊 2. `docs/analise.md`
+### 📊 2. `docs/analise.md` (Novos Requisitos)
 ```markdown
-Análise
+# Análise (Atualizada)
 
- 📌 Objetivo
-
-Desenvolver um mini jogo de batalha em turnos utilizando C++, Qt Creator e conceitos de Programação Orientada a Objetos.
-
-O jogador deverá responder perguntas de múltipla escolha para atacar o Chefão do jogo.
+## 📌 Objetivo
+Desenvolver um jogo de batalha em turnos utilizando C++, Qt e POO, focado no combate contra um Chefão através de um Quiz técnico, incluindo gerenciamento de recursos (itens) e armazenamento persistente.
 
 ---
 
- ✅ Requisitos Funcionais
+## ✅ Requisitos Funcionais (Novos & Atualizados)
 
-- Escolher personagem (Warrior, Mage ou Archer)
-- Exibir perguntas com 4 alternativas na tela
-- Validar se a alternativa selecionada pelo usuário é a correta
-- Executar ataques do jogador contra o Chefão ao acertar a pergunta
-- Executar contra-ataque do Chefão contra o jogador caso o jogador erre a pergunta
-- Controlar a vida (HP) dos personagens em tempo real
-- Encerrar partida ao atingir 0 de vida (declarando Vitória ou Derrota)
-
----
-
- ✅ Requisitos Adicionais
-
-- Sistema de ranking para registrar as vitórias
-- Interface gráfica com abas
-- Utilização de Qt Widgets
+- **[RF01] Escolha de Personagem:** Escolher entre Warrior, Mage ou Archer.
+- **[RF02] Sistema de Quiz:** Exibir perguntas com 4 alternativas e validar a resposta.
+- **[RF03] Combate:** Atacar o Chefão ao acertar; receber contra-ataque ao errar.
+- **[RF04] Sistema de Inventário:** O jogador inicia a partida com itens consumíveis limitados (ex: 2 Poções de Cura, 1 Elixir de Ataque).
+- **[RF05] Uso de Itens:** O jogador pode optar por usar um item em seu turno em vez de responder a uma pergunta.
+- **[RF06] Persistência do Ranking:** Salvar o nome do jogador e seu recorde em um arquivo local (`ranking.txt`) ao vencer.
+- **[RF07] Exibição de Histórico:** Ler o arquivo `ranking.txt` ao abrir o jogo e renderizar o ranking atualizado na interface gráfica.
 
 ---
 
- ⚙️ Requisitos Não Funcionais
+## ⚙️ Requisitos Não Funcionais
 
-- Desenvolvido em C++
-- Utilização do Qt Creator
-- Organização modular
-- Aplicação de encapsulamento, herança, polimorfismo e reaproveitamento de código na criação do adversário.
+- Persistência utilizando as bibliotecas nativas do Qt (`QFile` e `QTextStream`).
+- Aplicação de Herança e Polimorfismo tanto nos Personagens quanto nos Itens.
