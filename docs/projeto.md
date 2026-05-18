@@ -9,43 +9,49 @@ O sistema será dividido em múltiplas classes responsáveis por partes específ
 ## 🧱 Classes
 
 ### Character
-Classe base do sistema.
+Classe base abstrata do sistema.
 
 Responsável por:
-- Nome
-- Vida
-- Ataque
+- Encapsular Nome, Vida (HP) e Poder de Ataque.
+- Definir o método virtual puro de ataque (Polimorfismo).
 
 ---
 
 ### Warrior
-Classe derivada de Character.
+Classe derivada de Character (Herança).
 
 Características:
-- Alto dano físico
+- Alta resistência (HP elevado) e dano físico moderado.
 
 ---
 
 ### Mage
-Classe derivada de Character.
+Classe derivada de Character (Herança).
 
 Características:
-- Ataque mágico
+- Alta capacidade ofensiva (Grande dano mágico) e menor resistência.
 
 ---
 
 ### Archer
-Classe derivada de Character.
+Classe derivada de Character (Herança).
 
 Características:
-- Ataque balanceado
+- Atributos equilibrados entre vida e dano.
 
 ---
 
 ### QuestionManager
 Responsável por:
-- Gerenciar perguntas
-- Validar respostas
+- Armazenar e gerenciar o banco de perguntas do quiz.
+- Validar as respostas selecionadas pelo jogador.
+
+---
+
+### MainWindow
+Responsável por:
+- Gerenciar a interface gráfica (Qt Widgets) e as abas do jogo.
+- Controlar o fluxo dos turnos da batalha (Associação com as classes de personagens).
 
 ---
 
