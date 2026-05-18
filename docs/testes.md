@@ -1,5 +1,3 @@
----
-
 ### 🧪 4. `docs/testes.md`
 ```markdown
 # Testes
