@@ -1,18 +1,15 @@
 # 🎮 Battle Quiz Arena
 
-Projeto desenvolvido em C++ utilizando Qt Creator e conceitos de Programação Orientada a Objetos.
+Projeto desenvolvido em C++ utilizando Qt Creator, Qt Widgets e conceitos de Programação Orientada a Objetos.
 
 ---
 
 ## 📌 Descrição
 
 Battle Quiz Arena é um mini jogo de batalha em turnos com interface gráfica.
-
 O jogador escolhe um personagem e responde perguntas para atacar o inimigo.
-
 Cada personagem possui habilidades e atributos diferentes.
-
-O sistema foi desenvolvido utilizando Qt Widgets e múltiplas abas.
+O sistema foi desenvolvido utilizando Qt Widgets e múltiplas abas (`QTabWidget`).
 
 ---
 
@@ -24,11 +21,11 @@ Aplicar conceitos fundamentais de Programação Orientada a Objetos utilizando u
 
 ## 🧠 Conceitos de POO Utilizados
 
-- Encapsulamento
-- Herança
-- Polimorfismo
-- Associação entre classes
-- Organização modular
+- **Encapsulamento:** Atributos de vida e ataque protegidos (`protected`) e acessados via getters.
+- **Herança:** Classes filhas reutilizando a estrutura da classe base `Character`.
+- **Polimorfismo:** Métodos virtuais puros para comportamentos de ataque customizados.
+- **Associação entre classes:** A tela principal (`MainWindow`) gerencia e associa o jogador e o inimigo.
+- **Organização modular:** Separação lógica entre interface gráfica e regras de negócio.
 
 ---
 
@@ -37,25 +34,24 @@ Aplicar conceitos fundamentais de Programação Orientada a Objetos utilizando u
 ```text
 battle-quiz-arena/
 │
-├── src/
-│   ├── main.cpp
-│   ├── mainwindow.cpp
-│   ├── mainwindow.h
-│   ├── character.h
-│   ├── character.cpp
-│   ├── warrior.h
-│   ├── warrior.cpp
-│   ├── mage.h
-│   ├── mage.cpp
-│   ├── archer.h
-│   ├── archer.cpp
+├── CMakeLists.txt              # Configuração do build do sistema
+├── main.cpp                    # Ponto de entrada do programa
+├── mainwindow.h                # Header da janela principal
+├── mainwindow.cpp              # Lógica da interface gráfica
+├── mainwindow.ui               # Arquivo de design visual (Qt Designer)
 │
-├── forms/
-│   ├── mainwindow.ui
+├── character.h                 # Classe base dos personagens
+├── character.cpp
+├── warrior.h                   # Classe derivada (Guerreiro)
+├── warrior.cpp
+├── mage.h                      # Classe derivada (Mago)
+├── mage.cpp
+├── archer.h                    # Classe derivada (Arqueiro)
+├── archer.cpp
 │
-├── docs/
+├── docs/                       # Documentação do projeto
 │   ├── analise.md
 │   ├── projeto.md
-│   ├── testes.md
+│   └── testes.md
 │
 └── README.md
