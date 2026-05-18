@@ -1,8 +1,8 @@
 ### 🧪 4. `docs/testes.md`
 ```markdown
-# Testes
+Testes
 
-## ✅ Teste 1 - Escolha de personagem
+ ✅ Teste 1 - Escolha de personagem
 
 Ação:
 Selecionar o personagem desejado na tela inicial.
@@ -12,7 +12,7 @@ Instância do herói correspondente carregada na memória com seus atributos esp
 
 ---
 
-## ✅ Teste 2 - Resposta correta (Ataque ao Chefão)
+ ✅ Teste 2 - Resposta correta (Ataque ao Chefão)
 
 Ação:
 Clicar na alternativa correta dentre as opções na tela.
@@ -22,7 +22,7 @@ O jogador executa seu ataque polimórfico e o Chefão recebe dano, diminuindo su
 
 ---
 
-## ✅ Teste 3 - Resposta incorreta (Contra-ataque do Chefão)
+ ✅ Teste 3 - Resposta incorreta (Contra-ataque do Chefão)
 
 Ação:
 Clicar em uma alternativa incorreta de pergunta na tela.
@@ -32,7 +32,7 @@ O jogador falha em atacar e o Chefão executa um contra-ataque automático, dimi
 
 ---
 
-## ✅ Teste 4 - Vitória contra o Chefão
+ ✅ Teste 4 - Vitória contra o Chefão
 
 Ação:
 Reduzir a vida (HP) do Chefão para 0.
@@ -42,7 +42,7 @@ O jogo encerra o combate, bloqueia os botões de alternativas e exibe uma mensag
 
 ---
 
-## ✅ Teste 5 - Derrota para o Chefão
+✅ Teste 5 - Derrota para o Chefão
 
 Ação:
 Reduzir a vida (HP) do jogador para 0 devido aos ataques do Chefão.
