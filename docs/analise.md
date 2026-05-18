@@ -1,8 +1,8 @@
 ### 📊 2. `docs/analise.md`
 ```markdown
-# Análise
+Análise
 
-## 📌 Objetivo
+ 📌 Objetivo
 
 Desenvolver um mini jogo de batalha em turnos utilizando C++, Qt Creator e conceitos de Programação Orientada a Objetos.
 
@@ -10,7 +10,7 @@ O jogador deverá responder perguntas de múltipla escolha para atacar o Chefão
 
 ---
 
-## ✅ Requisitos Funcionais
+ ✅ Requisitos Funcionais
 
 - Escolher personagem (Warrior, Mage ou Archer)
 - Exibir perguntas com 4 alternativas na tela
@@ -22,7 +22,7 @@ O jogador deverá responder perguntas de múltipla escolha para atacar o Chefão
 
 ---
 
-## ✅ Requisitos Adicionais
+ ✅ Requisitos Adicionais
 
 - Sistema de ranking para registrar as vitórias
 - Interface gráfica com abas
@@ -30,7 +30,7 @@ O jogador deverá responder perguntas de múltipla escolha para atacar o Chefão
 
 ---
 
-## ⚙️ Requisitos Não Funcionais
+ ⚙️ Requisitos Não Funcionais
 
 - Desenvolvido em C++
 - Utilização do Qt Creator
