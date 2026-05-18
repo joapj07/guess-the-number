@@ -1,0 +1,107 @@
+# 🎭 Roteiro e Narrativa do Jogo - Battle Quiz Arena
+
+Este arquivo contém o banco de dados inicial de perguntas, alternativas e as falas dinâmicas do Chefão ("O Grão-Mestre do Silício") para interações durante a partida.
+
+---
+
+## 😈 Perfil do Adversário: O Grão-Mestre do Silício
+* **HP Base:** 200
+* **Poder de Ataque:** 15 a 25 (conforme o erro do jogador)
+* **Descrição:** Uma entidade cibernética que se alimenta de bugs e circuitos mal projetados. Ele odeia código limpo e adora humilhar estudantes que esquecem de colocar ponto e vírgula.
+
+---
+
+## 🎲 Banco de Perguntas e Alternativas
+
+### 🔵 Bloco 1: Programação Orientada a Objetos (POO)
+
+**Pergunta 1:** Qual pilar da POO é responsável por esconder os detalhes internos de um objeto e expor apenas o necessário através de métodos públicos?
+* A) Herança
+* B) Polimorfismo
+* C) Encapsulamento *(Correta)*
+* D) Abstração
+> **Provocação do Chefão (Erro):** "Haha! Seus atributos estão totalmente expostos! Você não sabe nem se proteger com um modificador `private`!"
+
+**Pergunta 2:** O que acontece quando declaramos um método como "virtual puro" (com `= 0` no final) em C++?
+* A) O método é deletado do programa.
+* B) A classe se torna Abstrata e não pode ser instanciada. *(Correta)*
+* C) O método só pode ser chamado uma vez.
+* D) O programa compila mais rápido.
+> **Provocação do Chefão (Erro):** "Você tentou instanciar o impossível! Sua lógica é tão abstrata quanto a sua chance de passar nessa matéria!"
+
+**Pergunta 3:** Na herança em C++, qual modificador de acesso permite que as classes filhas acessem os membros da classe mãe, mas impede o acesso do mundo exterior?
+* A) public
+* B) private
+* C) protected *(Correta)*
+* D) friend
+> **Provocação do Chefão (Erro):** "Acesso negado! Nem suas classes filhas confiam em você. Você é um estranho no escopo!"
+
+**Pergunta 4:** Qual é a função principal de um "Destrutor" em uma classe C++?
+* A) Apagar o código-fonte do computador.
+* B) Liberar a memória e recursos alocados pelo objeto quando ele é destruído. *(Correta)*
+* C) Reiniciar o jogo do zero.
+* D) Criar cópias do objeto.
+> **Provocação do Chefão (Erro):** "Seu código está vazando memória igual às suas chances de me vencer! Memory leak fatal!"
+
+**Pergunta 5:** Quando uma classe filha reescreve um método virtual que já existia na classe mãe, qual palavra-chave do C++11 usamos para garantir que estamos fazendo isso certo?
+* A) virtual
+* B) static
+* C) override *(Correta)*
+* D) overload
+> **Provocação do Chefão (Erro):** "Você tentou dar um overload na minha paciência, mas esqueceu do `override`! Erro de compilação na sua cara!"
+
+---
+
+### ⚡ Bloco 2: Conhecimentos Básicos de Eletrônica
+
+**Pergunta 6:** De acordo com a Lei de Ohm, se você mantiver a resistência de um circuito constante e duplicar a tensão (Voltagem), o que acontece com a corrente elétrica?
+* A) A corrente cai pela metade.
+* B) A corrente também duplica. *(Correta)*
+* C) A corrente zera.
+* D) A corrente explode o circuito.
+> **Provocação do Chefão (Erro):** "Incrível! Você conseguiu queimar o circuito antes mesmo de ligar a fonte! Que falta de resistência!"
+
+**Pergunta 7:** Qual componente eletrônico básico é conhecido por armazenar energia em um campo elétrico e descarregá-la rapidamente?
+* A) Resistor
+* B) Diodo
+* C) Capacitor *(Correta)*
+* D) Transistor
+> **Provocação do Chefão (Erro):** "Sua mente está sem capacitância nenhuma... Não consegue reter nem um bit de informação!"
+
+**Pergunta 8:** Qual é a função de um Diodo em um circuito eletrônico?
+* A) Aumentar a resistência total do circuito.
+* B) Permitir que a corrente flua em apenas um sentido. *(Correta)*
+* C) Armazenar corrente alternada.
+* D) Transformar calor em eletricidade.
+> **Provocação do Chefão (Erro):** "Você tentou colocar a corrente no sentido inverso! Seu fluxo de pensamentos está totalmente bloqueado por mim!"
+
+**Pergunta 9:** Se você associar dois resistores de 100 Ohms em PARALELO, qual será a resistência equivalente desse circuito?
+* A) 200 Ohms
+* B) 100 Ohms
+* C) 50 Ohms *(Correta)*
+* D) 0 Ohms
+> **Provocação do Chefão (Erro):** "Até a matemática básica da eletrônica te esmaga! Dividido por dois e você ainda erra?"
+
+**Pergunta 10:** Qual componente semicondutor revolucionou a eletrônica moderna, funcionando como um interruptor ou amplificador de sinal em processadores?
+* A) Transistor *(Correta)*
+* B) Fusível
+* C) Indutor
+* D) Potenciômetro
+> **Provocação do Chefão (Erro):** "Eu sou feito de bilhões de transistores, e você não consegue decodificar a lógica de um único portal!"
+
+---
+
+## 🔀 Lógica de Sorteio de Fim de Jogo (Game Over)
+
+O sistema deverá selecionar aleatoriamente uma das opções abaixo no fim da partida para aumentar o fator de repetição do jogo.
+
+### 🏆 Sistema de Vitória (O Chefão entra em Curto-Circuito)
+* **Frase 1:** "Não... Impossível! Meu sistema entrou em curto-circuito... Minha memória foi desalocada... Você... compilou um código perfeito!"
+* **Frase 2:** "Sistema corrompido... Minhas portas lógicas estão falhando... Como você conseguiu resolver todos os blocos sem um único erro de sintaxe?!"
+
+### 💀 Sistema de Derrota (O Jogador perde toda a Vida)
+* **Frase 1:** "Retorne para o primeiro semestre, mero usuário! Seu destino é passar o resto da vida caçando `Segmentation Fault`!"
+* **Frase 2:** "Parece que o seu projeto de fim de semestre acabou de soltar fumaça preta! Seu circuito entrou em curto total e a sua nota foi carbonizada junto com os seus transistores. Volte para a bancada!"
+* **Frase 3:** "GAME OVER! Seu código gerou um erro na alma! Você tentou acessar um ponteiro nulo e sua dignidade foi desalocada da memória."
+* **Frase 4:** "Compilação falhou: 99 erros e 0 acertos. Eu avisei que copiar código da internet sem entender a matéria não te ajudaria na minha Arena! Linha do horizonte: reprovado!"
+* **Frase 5:** "Que trágico! Você ligou a fonte invertida, esqueceu de colocar o resistor no LED e ainda tentou dar herança privada na classe errada. O resultado? Uma explosão de bugs que resetou a sua vida para zero!"
