@@ -1,5 +1,4 @@
-### Conteúdo completo para o arquivo `docs/narrativa.md`
-```markdown
+
 # 🎭 Roteiro e Narrativa do Jogo - Battle Quiz Arena
 
 Este arquivo contém o banco de dados inicial de perguntas, alternativas, as falas de fim de jogo e as reações dinâmicas do Chefão ("O Grão-Mestre do Silício") para interações em tempo real.
