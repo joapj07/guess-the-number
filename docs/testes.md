@@ -1,5 +1,4 @@
-### 🧪 5. Conteúdo completo para o arquivo `docs/testes.md`
-```markdown
+
 # Processo de Validação e Testes do Sistema
 
 ## 🔎 Casos de Teste Estruturados
