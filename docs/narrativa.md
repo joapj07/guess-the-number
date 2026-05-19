@@ -1,4 +1,4 @@
-### 🎭 4. Conteúdo completo para o arquivo `docs/narrativa.md`
+### Conteúdo completo para o arquivo `docs/narrativa.md`
 ```markdown
 # 🎭 Roteiro e Narrativa do Jogo - Battle Quiz Arena
 
