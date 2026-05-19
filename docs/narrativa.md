@@ -1,3 +1,5 @@
+### 🎭 4. Conteúdo completo para o arquivo `docs/narrativa.md`
+```markdown
 # 🎭 Roteiro e Narrativa do Jogo - Battle Quiz Arena
 
 Este arquivo contém o banco de dados inicial de perguntas, alternativas, as falas de fim de jogo e as reações dinâmicas do Chefão ("O Grão-Mestre do Silício") para interações em tempo real.
@@ -21,14 +23,14 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas, as fal
 * D) Abstração
 > **Provocação do Chefão (Erro):** "Haha! Seus atributos estão totalmente expostos! Você não sabe nem se proteger com um modificador `private`!"
 
-**Pergunta 2:** O que acontece quando declaramos um método como "virtual puro" (com `= 0` no final) in C++?
+**Pergunta 2:** O que acontece quando declaramos um método como "virtual puro" (com `= 0` no final) em C++?
 * A) O método é deletado do programa.
 * B) A classe se torna Abstrata e não pode ser instanciada. (Correta)
 * C) O método só pode ser chamado uma vez.
 * D) O programa compila mais rápido.
 > **Provocação do Chefão (Erro):** "Você tentou instanciar o impossível! Sua lógica é tão abstrata quanto a sua chance de passar nessa matéria!"
 
-**Pergunta 3:** Na herança em C++, qual modificador de acesso permite que as classes filhas acessem os membros da classe mãe, mas impede o acesso do mundo exterior?
+**Pergunta 3:** Na herança em C++, qual modificador de acesso permite que as classes filhas acesssem os membros da classe mãe, mas impede o acesso do mundo exterior?
 * A) public
 * B) private
 * C) protected (Correta)
@@ -104,11 +106,42 @@ Quando o jogador decide gastar seu turno usando um item estratégico, o Chefão 
 
 ---
 
+## 🎲 Eventos Aleatórios de Turno (Fator RPG)
+
+Eventos que podem acontecer de forma inesperada no início de um turno, alterando as regras temporariamente:
+
+* **⚡ Evento 1: Oscilação na Rede Elétrica**
+  * *Texto na Tela:* "AVISO: Uma forte oscilação de energia atingiu a arena! O próximo ataque de qualquer um dos lados causará DANO CRÍTICO DUPLO!"
+* **🦠 Evento 2: Ataque DDOS**
+  * *Texto na Tela:* "ALERTA: O Chefão iniciou um ataque DDOS nos seus servidores! Você perdeu um item aleatório do seu inventário devido à sobrecarga!"
+* **🛠️ Evento 3: Refatoração de Código**
+  * *Texto na Tela:* "BÔNUS: Você encontrou um trecho de código antigo e o refatorou com sucesso. Você recuperou 20 de HP instantaneamente!"
+
+---
+
+## 🏆 Sistema de Conquistas (Achievements)
+
+Medalhas internas que o jogador desbloqueia e que serão validadas e exibidas na aba de Ranking:
+
+1. **🏅 Mestre do Silício**
+   * *Requisito:* Responder corretamente a 5 perguntas seguidas de Eletrônica Básica.
+   * *Mensagem:* "Conquista Desbloqueada: Mestre do Silício! O Grão-Mestre respeita seus conhecimentos de hardware."
+
+2. **🏅 Código Limpo (Clean Code)**
+   * *Requisito:* Vencer o jogo sem usar nenhuma Poção de Cura do inventário.
+   * *Mensagem:* "Conquista Desbloqueada: Código Limpo! Você passou pela arena sem precisar de remendos ou gambiarras."
+
+3. **🏅 À Beira do Crash**
+   * *Requisito:* Vencer a batalha final com menos de 5% de HP restante.
+   * *Mensagem:* "Conquista Desbloqueada: À Beira do Crash! Sobreviveu por um ponteiro!"
+
+---
+
 ## 🔀 Sistema de Fim de Jogo (Sorteio Aleatório)
 
 ### 🏆 Mensagens de Vitória (O Chefão entra em Curto-Circuito)
 * **Frase 1:** "Não... Impossível! Meu sistema entrou em curto-circuito... Minha memória foi desalocada... Você... compilou um código perfeito!"
-* **Frase 2:** "Sistema corrompido... Minhas portas lógicas estão falhando... Como você conseguiu resolver todos os blocos sem um único erro de sintaxe?!"
+* **Frase 2:** "Sistema corrompido... Minhas portas lógicas estão falhando... Como você conseguiu resolver todos os blocos sem un único erro de sintaxe?!"
 
 ### 💀 Mensagens de Derrota (Game Over)
 * **Frase 1:** "Retorne para o primeiro semestre, mero usuário! Seu destino é passar o resto da vida caçando `Segmentation Fault`!"
@@ -116,3 +149,27 @@ Quando o jogador decide gastar seu turno usando um item estratégico, o Chefão 
 * **Frase 3:** "GAME OVER! Seu código gerou um erro na alma! Você tentou acessar um ponteiro nulo e sua dignidade foi desalocada da memória."
 * **Frase 4:** "Compilação falhou: 99 erros e 0 acertos. Eu avisei que copiar código da internet sem entender a matéria não te ajudaria na minha Arena! Linha do horizonte: reprovado!"
 * **Frase 5:** "Que trágico! Você ligou a fonte invertida, esqueceu de colocar o resistor no LED e ainda tentou dar herança privada na classe errada. O resultado? Uma explosão de bugs que resetou a sua vida para zero!"
+
+---
+
+## 💾 Modelo de Exportação do Log da Partida (`log_partida.txt`)
+
+```text
+==================================================
+        LOG DE BATALHA - BATTLE QUIZ ARENA        
+==================================================
+Jogador: [Nome_Do_Player] | Classe: [Classe_Escolhida]
+Resultado: VITÓRIA / DERROTA
+--------------------------------------------------
+[TURNO 1] Pergunta sobre Encapsulamento exibida.
+[TURNO 1] Jogador ACERTOU a resposta.
+[TURNO 1] Herói causou 25 de dano. HP do Chefão: 175.
+--------------------------------------------------
+[TURNO 2] EVENTO: Oscilação na Rede Elétrica ativo!
+[TURNO 2] Pergunta sobre Lei de Ohm exibida.
+[TURNO 2] Jogador ERROU a resposta.
+[TURNO 2] Chefão ativou contra-ataque Crítico: -40 HP do Jogador.
+[TURNO 2] Fala do Chefão: "Incrível! Você conseguiu queimar o circuito..."
+--------------------------------------------------
+FIM DE JOGO - Partida encerrada em X turnos.
+==================================================
