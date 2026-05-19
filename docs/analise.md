@@ -1,5 +1,3 @@
----
-
 ### 📊 2. `docs/analise.md` (Análise de Requisitos)
 ```markdown
 # Análise
