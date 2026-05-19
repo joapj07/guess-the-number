@@ -1,6 +1,6 @@
 # 🎮 Battle Quiz Arena - Ultimate Edition
 
-Projeto avançado desenvolvido em C++ utilizando Qt Creator, Qt Widgets e conceitos profundos de Programação Orientada a Objetos.
+Projeto desenvolvido em C++ utilizando Qt Creator, Qt Widgets e conceitos de Programação Orientada a Objetos.
 
 ---
 
