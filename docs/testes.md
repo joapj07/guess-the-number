@@ -4,11 +4,11 @@
 
 ## 🔎 Casos de Teste Estruturados
 
-### Verificação de Seleção de Classe
+## Verificação de Seleção de Classe
 - **Ação Executada:** Clicar em um dos botões de herói na primeira aba da aplicação.
 - **Comportamento Esperado:** O jogo cria a instância do personagem correto na memória com os valores exatos de HP e ataque da classe correspondente.
 
-### Resposta de Pergunta Correta
+## Resposta de Pergunta Correta
 - **Ação Executada:** Selecionar a alternativa correta em uma das questões do Quiz central.
 - **Comportamento Esperado:** O herói dispara sua rotina de ataque, a barra de vida do Chefão reduz proporcionalmente e o turno passa para o jogador sem sofrer dano.
 
