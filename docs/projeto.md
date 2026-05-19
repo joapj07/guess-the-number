@@ -1,4 +1,4 @@
-# Projeto
+# Projeto e Arquitetura
 
 ## 📌 Estrutura do Sistema
 
@@ -30,15 +30,17 @@ Implementa o efeito de Overclock, aumentando o poder de ataque do herói para o 
 Classe responsável por estruturar o banco de dados do Quiz. Encapsula um vetor de estruturas do tipo `Question` e expõe métodos para carregar, sortear e validar as respostas clicadas.
 
 ### MainWindow
-A classe da interface gráfica que gerencia os turnos. Ela associa os objetos, atualiza os componentes visuais, lê e escreve no arquivo físico `ranking.txt` para manter o ranking persistente entre execuções.
+A classe da interface gráfica que gerencia os turnos. Ela associa os objetos, atualiza os componentes visuais, lê e escreve nos arquivos físicos `ranking.txt` e `log_partida.txt` para manter a persistência de dados.
 
 ---
 
-## 🧠 Diagramas de Herança do Projeto
+## ⚙️ Arquitetura dos Novos Complementos
 
-### Árvore de Personagens:
-```text
-Character (Utilizada para os Heróis e reutilizada para o Chefão)
- ├── Warrior (Guerreiro)
- ├── Mage (Mago)
- └── Archer (Arqueiro)
+### Estrutura de Conquistas (Achievements)
+Será modelada como uma `struct` interna na `MainWindow`:
+```cpp
+struct Achievement {
+    QString title;
+    QString description;
+    bool isUnlocked;
+};
