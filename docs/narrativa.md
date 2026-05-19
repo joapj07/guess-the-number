@@ -1,12 +1,15 @@
+---
+
+### 🎭 4. `docs/narrativa.md` (Perguntas, Falas e Reações do Chefão)
+```markdown
 # 🎭 Roteiro e Narrativa do Jogo - Battle Quiz Arena
 
-Este arquivo contém o banco de dados inicial de perguntas, alternativas e as falas dinâmicas do Chefão ("O Grão-Mestre do Silício") para interações durante a partida.
+Este arquivo contém o banco de dados inicial de perguntas, alternativas, as falas de fim de jogo e as reações dinâmicas do Chefão ("O Grão-Mestre do Silício") para interações em tempo real.
 
 ---
 
 ## 😈 Perfil do Adversário: O Grão-Mestre do Silício
 * **HP Base:** 200
-* **Poder de Ataque:** 15 a 25 (conforme o erro do jogador)
 * **Descrição:** Uma entidade cibernética que se alimenta de bugs e circuitos mal projetados. Ele odeia código limpo e adora humilhar estudantes que esquecem de colocar ponto e vírgula.
 
 ---
@@ -91,15 +94,27 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas e as fa
 
 ---
 
-## 🔀 Lógica de Sorteio de Fim de Jogo (Game Over)
+## 🎒 Reações do Chefão ao Uso de Itens (Inventário)
 
-O sistema deverá selecionar aleatoriamente uma das opções abaixo no fim da partida para aumentar o fator de repetição do jogo.
+Quando o jogador decide gastar seu turno usando um item estratégico, o Chefão reage de forma ácida no log de batalha (sorteado aleatoriamente):
 
-### 🏆 Sistema de Vitória (O Chefão entra em Curto-Circuito)
+### 🧪 Uso da Poção de Cura
+* **Frase 1:** "O quê?! Usando patch de correção em tempo de execução? Isso é gambiarra, seu código continua quebrado!"
+* **Frase 2:** "Pode recuperar o seu HP, mas não há memória RAM suficiente no mundo para salvar a sua nota!"
+
+### ⚡ Uso do Elixir de Overclock (Attack Buff)
+* **Frase 1:** "Overclock? Cuidado para não fritar seus neurônios antes de responder a próxima pergunta!"
+* **Frase 2:** "Pode aumentar o seu poder de ataque, mas se errar a sintaxe, o compilador vai te esmagar do mesmo jeito!"
+
+---
+
+## 🔀 Sistema de Fim de Jogo (Sorteio Aleatório)
+
+### 🏆 Mensagens de Vitória (O Chefão entra em Curto-Circuito)
 * **Frase 1:** "Não... Impossível! Meu sistema entrou em curto-circuito... Minha memória foi desalocada... Você... compilou um código perfeito!"
 * **Frase 2:** "Sistema corrompido... Minhas portas lógicas estão falhando... Como você conseguiu resolver todos os blocos sem um único erro de sintaxe?!"
 
-### 💀 Sistema de Derrota (O Jogador perde toda a Vida)
+### 💀 Mensagens de Derrota (Game Over)
 * **Frase 1:** "Retorne para o primeiro semestre, mero usuário! Seu destino é passar o resto da vida caçando `Segmentation Fault`!"
 * **Frase 2:** "Parece que o seu projeto de fim de semestre acabou de soltar fumaça preta! Seu circuito entrou em curto total e a sua nota foi carbonizada junto com os seus transistores. Volte para a bancada!"
 * **Frase 3:** "GAME OVER! Seu código gerou um erro na alma! Você tentou acessar um ponteiro nulo e sua dignidade foi desalocada da memória."
