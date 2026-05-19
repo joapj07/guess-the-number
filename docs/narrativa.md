@@ -1,7 +1,3 @@
----
-
-### 🎭 4. `docs/narrativa.md` (Perguntas, Falas e Reações do Chefão)
-```markdown
 # 🎭 Roteiro e Narrativa do Jogo - Battle Quiz Arena
 
 Este arquivo contém o banco de dados inicial de perguntas, alternativas, as falas de fim de jogo e as reações dinâmicas do Chefão ("O Grão-Mestre do Silício") para interações em tempo real.
@@ -21,13 +17,13 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas, as fal
 **Pergunta 1:** Qual pilar da POO é responsável por esconder os detalhes internos de um objeto e expor apenas o necessário através de métodos públicos?
 * A) Herança
 * B) Polimorfismo
-* C) Encapsulamento *(Correta)*
+* C) Encapsulamento (Correta)
 * D) Abstração
 > **Provocação do Chefão (Erro):** "Haha! Seus atributos estão totalmente expostos! Você não sabe nem se proteger com um modificador `private`!"
 
-**Pergunta 2:** O que acontece quando declaramos um método como "virtual puro" (com `= 0` no final) em C++?
+**Pergunta 2:** O que acontece quando declaramos um método como "virtual puro" (com `= 0` no final) in C++?
 * A) O método é deletado do programa.
-* B) A classe se torna Abstrata e não pode ser instanciada. *(Correta)*
+* B) A classe se torna Abstrata e não pode ser instanciada. (Correta)
 * C) O método só pode ser chamado uma vez.
 * D) O programa compila mais rápido.
 > **Provocação do Chefão (Erro):** "Você tentou instanciar o impossível! Sua lógica é tão abstrata quanto a sua chance de passar nessa matéria!"
@@ -35,13 +31,13 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas, as fal
 **Pergunta 3:** Na herança em C++, qual modificador de acesso permite que as classes filhas acessem os membros da classe mãe, mas impede o acesso do mundo exterior?
 * A) public
 * B) private
-* C) protected *(Correta)*
+* C) protected (Correta)
 * D) friend
 > **Provocação do Chefão (Erro):** "Acesso negado! Nem suas classes filhas confiam em você. Você é um estranho no escopo!"
 
 **Pergunta 4:** Qual é a função principal de um "Destrutor" em uma classe C++?
 * A) Apagar o código-fonte do computador.
-* B) Liberar a memória e recursos alocados pelo objeto quando ele é destruído. *(Correta)*
+* B) Liberar a memória e recursos alocados pelo objeto quando ele é destruído. (Correta)
 * C) Reiniciar o jogo do zero.
 * D) Criar cópias do objeto.
 > **Provocação do Chefão (Erro):** "Seu código está vazando memória igual às suas chances de me vencer! Memory leak fatal!"
@@ -49,7 +45,7 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas, as fal
 **Pergunta 5:** Quando uma classe filha reescreve um método virtual que já existia na classe mãe, qual palavra-chave do C++11 usamos para garantir que estamos fazendo isso certo?
 * A) virtual
 * B) static
-* C) override *(Correta)*
+* C) override (Correta)
 * D) overload
 > **Provocação do Chefão (Erro):** "Você tentou dar um overload na minha paciência, mas esqueceu do `override`! Erro de compilação na sua cara!"
 
@@ -59,7 +55,7 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas, as fal
 
 **Pergunta 6:** De acordo com a Lei de Ohm, se você mantiver a resistência de um circuito constante e duplicar a tensão (Voltagem), o que acontece com a corrente elétrica?
 * A) A corrente cai pela metade.
-* B) A corrente também duplica. *(Correta)*
+* B) A corrente também duplica. (Correta)
 * C) A corrente zera.
 * D) A corrente explode o circuito.
 > **Provocação do Chefão (Erro):** "Incrível! Você conseguiu queimar o circuito antes mesmo de ligar a fonte! Que falta de resistência!"
@@ -67,13 +63,13 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas, as fal
 **Pergunta 7:** Qual componente eletrônico básico é conhecido por armazenar energia em um campo elétrico e descarregá-la rapidamente?
 * A) Resistor
 * B) Diodo
-* C) Capacitor *(Correta)*
+* C) Capacitor (Correta)
 * D) Transistor
 > **Provocação do Chefão (Erro):** "Sua mente está sem capacitância nenhuma... Não consegue reter nem um bit de informação!"
 
 **Pergunta 8:** Qual é a função de um Diodo em um circuito eletrônico?
 * A) Aumentar a resistência total do circuito.
-* B) Permitir que a corrente flua em apenas um sentido. *(Correta)*
+* B) Permitir que a corrente flua em apenas um sentido. (Correta)
 * C) Armazenar corrente alternada.
 * D) Transformar calor em eletricidade.
 > **Provocação do Chefão (Erro):** "Você tentou colocar a corrente no sentido inverso! Seu fluxo de pensamentos está totalmente bloqueado por mim!"
@@ -81,12 +77,12 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas, as fal
 **Pergunta 9:** Se você associar dois resistores de 100 Ohms em PARALELO, qual será a resistência equivalente desse circuito?
 * A) 200 Ohms
 * B) 100 Ohms
-* C) 50 Ohms *(Correta)*
+* C) 50 Ohms (Correta)
 * D) 0 Ohms
 > **Provocação do Chefão (Erro):** "Até a matemática básica da eletrônica te esmaga! Dividido por dois e você ainda erra?"
 
 **Pergunta 10:** Qual componente semicondutor revolucionou a eletrônica moderna, funcionando como um interruptor ou amplificador de sinal em processadores?
-* A) Transistor *(Correta)*
+* A) Transistor (Correta)
 * B) Fusível
 * C) Indutor
 * D) Potenciômetro
