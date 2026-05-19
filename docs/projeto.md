@@ -1,33 +1,44 @@
-# Projeto (Arquitetura Atualizada)
+# Projeto
 
-## 🧱 Novas Classes e Modificações
+## 📌 Estrutura do Sistema
 
-### Modificação em Character
-A classe base `Character` agora agrega uma lista ou vetor de itens (`QList<Item*>`), representando o inventário do personagem. Foram adicionados métodos como `useItem(int index)` e `addItem(Item* item)`.
+O sistema é modularizado e utiliza herança e polimorfismo duplo (tanto para os personagens de combate quanto para os itens do inventário), garantindo uma estrutura escalável e limpa.
+
+---
+
+## 🧱 Detalhamento das Classes
+
+### Character
+Classe base abstrata do sistema. É utilizada tanto para estruturar as classes dos Heróis quanto para o **reaproveitamento de código na criação do Chefão**, evitando a duplicação de lógica.
+- **Atributos:** Nome, HP (atual e máximo), Poder de Ataque e uma lista agregada de itens (`QList<Item*>`).
+
+### Warrior, Mage e Archer
+Classes derivadas de `Character`. Cada uma sobrescreve o método virtual de ataque para aplicar multiplicadores de dano específicos e mensagens personalizadas no log de batalha.
 
 ### Item (Classe Abstrata)
-Classe base para todos os consumíveis do jogo.
+Classe base para todos os itens consumíveis que o jogador carrega.
 - **Atributos:** `QString name`, `QString description`.
 - **Método Virtual Puro:** `virtual void applyEffect(Character* target) = 0;`
 
 ### HealthPotion (Herda de Item)
-Implementa o método `applyEffect` para restaurar uma quantidade fixa de HP (ex: +50 HP) no personagem do jogador.
+Implementa o efeito de cura, restaurando uma quantidade fixa de vida (+50 HP) no personagem do jogador.
 
 ### AttackBuff (Herda de Item)
-Implementa o método `applyEffect` para aumentar temporariamente o atributo de ataque do jogador para o próximo turno.
+Implementa o efeito de Overclock, aumentando o poder de ataque do herói para o turno seguinte.
 
-### Fluxo de Persistência (MainWindow)
-A classe `MainWindow` utilizará manipulação de arquivos para persistência de dados:
-1. Ao iniciar, chama uma função interna que abre o arquivo `ranking.txt` via `QFile`, lê linha por linha e joga os dados para dentro do componente visual de tabela (`QTableWidget`).
-2. Ao finalizar o jogo com vitória, abre o arquivo `ranking.txt` em modo de escrita/anexo (`QIODevice::Append`) e salva a nova pontuação formatada.
+### QuestionManager
+Classe responsável por estruturar o banco de dados do Quiz. Encapsula um vetor de estruturas do tipo `Question` e expõe métodos para carregar, sortear e validar as respostas clicadas.
+
+### MainWindow
+A classe da interface gráfica que gerencia os turnos. Ela associa os objetos, atualiza os componentes visuais, lê e escreve no arquivo físico `ranking.txt` para manter o ranking persistente entre execuções.
 
 ---
 
 ## 🧠 Diagramas de Herança do Projeto
 
-### Personagens:
+### Árvore de Personagens:
 ```text
-Character (Heróis e Chefão)
- ├── Warrior
- ├── Mage
- └── Archer
+Character (Utilizada para os Heróis e reutilizada para o Chefão)
+ ├── Warrior (Guerreiro)
+ ├── Mage (Mago)
+ └── Archer (Arqueiro)
