@@ -1,7 +1,4 @@
----
 
-### 📊 2. Conteúdo completo para o arquivo `docs/analise.md`
-```markdown
 # Análise
 
 ## 📌 Objetivo
