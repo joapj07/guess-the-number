@@ -1,4 +1,6 @@
-### 📊 2. `docs/analise.md` (Análise de Requisitos)
+---
+
+### 📊 2. Conteúdo completo para o arquivo `docs/analise.md`
 ```markdown
 # Análise
 
@@ -18,6 +20,10 @@ Desenvolver um jogo de batalha em turnos utilizando C++, Qt Creator e conceitos 
 - **[RF06] Persistência do Ranking:** Salvar o nome do jogador e a quantidade de turnos que ele levou para vencer em um arquivo local chamado `ranking.txt`.
 - **[RF07] Exibição de Histórico:** Ler o arquivo `ranking.txt` ao iniciar o programa e exibir os recordes salvos em uma tabela organizada por abas.
 - **[RF08] Controle de Vida:** Controlar e exibir o HP de todos os personagens em tempo real usando barras de progresso.
+- **[RF09] Eventos Aleatórios:** O sistema deve disparar modificadores de status em turnos aleatórios (ex: dobrar dano, roubo de item).
+- **[RF10] Sistema de Conquistas:** O jogo deve verificar e desbloquear conquistas na memória baseando-se das ações do jogador.
+- **[RF11] Exportação de Log:** Permitir que o usuário salve o histórico textual da partida atual em um arquivo externo chamado `log_partida.txt`.
+- **[RF12] Alternância de Temas:** Disponibilizar um botão na interface para trocar o StyleSheet do jogo entre Modo Claro e Modo Escuro em tempo real.
 
 ---
 
